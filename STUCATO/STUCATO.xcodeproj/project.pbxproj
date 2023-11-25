@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A622B121EF8001B1A2E /* AppDelegate.swift */; };
+		2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A642B121EF8001B1A2E /* SceneDelegate.swift */; };
+		2F665A672B121EF8001B1A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A662B121EF8001B1A2E /* ViewController.swift */; };
+		2F665A6A2B121EF8001B1A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A682B121EF8001B1A2E /* Main.storyboard */; };
+		2F665A6C2B121EFA001B1A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A6B2B121EFA001B1A2E /* Assets.xcassets */; };
+		2F665A6F2B121EFA001B1A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A6D2B121EFA001B1A2E /* LaunchScreen.storyboard */; };
+		2F665A7A2B121EFA001B1A2E /* STUCATOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A792B121EFA001B1A2E /* STUCATOTests.swift */; };
+		2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */; };
+		2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F665A762B121EFA001B1A2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F665A572B121EF8001B1A2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F665A5E2B121EF8001B1A2E;
+			remoteInfo = STUCATO;
+		};
+		2F665A802B121EFA001B1A2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F665A572B121EF8001B1A2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F665A5E2B121EF8001B1A2E;
+			remoteInfo = STUCATO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F665A5F2B121EF8001B1A2E /* STUCATO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STUCATO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F665A622B121EF8001B1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F665A642B121EF8001B1A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F665A662B121EF8001B1A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F665A692B121EF8001B1A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F665A6B2B121EFA001B1A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F665A6E2B121EFA001B1A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F665A702B121EFA001B1A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F665A752B121EFA001B1A2E /* STUCATOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STUCATOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F665A792B121EFA001B1A2E /* STUCATOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOTests.swift; sourceTree = "<group>"; };
+		2F665A7F2B121EFA001B1A2E /* STUCATOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STUCATOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITests.swift; sourceTree = "<group>"; };
+		2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F665A5C2B121EF8001B1A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A722B121EFA001B1A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A7C2B121EFA001B1A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F665A562B121EF8001B1A2E = {
+			isa = PBXGroup;
+			children = (
+				2F665A612B121EF8001B1A2E /* STUCATO */,
+				2F665A782B121EFA001B1A2E /* STUCATOTests */,
+				2F665A822B121EFA001B1A2E /* STUCATOUITests */,
+				2F665A602B121EF8001B1A2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F665A602B121EF8001B1A2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F665A5F2B121EF8001B1A2E /* STUCATO.app */,
+				2F665A752B121EFA001B1A2E /* STUCATOTests.xctest */,
+				2F665A7F2B121EFA001B1A2E /* STUCATOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F665A612B121EF8001B1A2E /* STUCATO */ = {
+			isa = PBXGroup;
+			children = (
+				2F665A622B121EF8001B1A2E /* AppDelegate.swift */,
+				2F665A642B121EF8001B1A2E /* SceneDelegate.swift */,
+				2F665A662B121EF8001B1A2E /* ViewController.swift */,
+				2F665A682B121EF8001B1A2E /* Main.storyboard */,
+				2F665A6B2B121EFA001B1A2E /* Assets.xcassets */,
+				2F665A6D2B121EFA001B1A2E /* LaunchScreen.storyboard */,
+				2F665A702B121EFA001B1A2E /* Info.plist */,
+			);
+			path = STUCATO;
+			sourceTree = "<group>";
+		};
+		2F665A782B121EFA001B1A2E /* STUCATOTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F665A792B121EFA001B1A2E /* STUCATOTests.swift */,
+			);
+			path = STUCATOTests;
+			sourceTree = "<group>";
+		};
+		2F665A822B121EFA001B1A2E /* STUCATOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */,
+				2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */,
+			);
+			path = STUCATOUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F665A5E2B121EF8001B1A2E /* STUCATO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F665A892B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATO" */;
+			buildPhases = (
+				2F665A5B2B121EF8001B1A2E /* Sources */,
+				2F665A5C2B121EF8001B1A2E /* Frameworks */,
+				2F665A5D2B121EF8001B1A2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STUCATO;
+			productName = STUCATO;
+			productReference = 2F665A5F2B121EF8001B1A2E /* STUCATO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F665A742B121EFA001B1A2E /* STUCATOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F665A8C2B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATOTests" */;
+			buildPhases = (
+				2F665A712B121EFA001B1A2E /* Sources */,
+				2F665A722B121EFA001B1A2E /* Frameworks */,
+				2F665A732B121EFA001B1A2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F665A772B121EFA001B1A2E /* PBXTargetDependency */,
+			);
+			name = STUCATOTests;
+			productName = STUCATOTests;
+			productReference = 2F665A752B121EFA001B1A2E /* STUCATOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F665A7E2B121EFA001B1A2E /* STUCATOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F665A8F2B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATOUITests" */;
+			buildPhases = (
+				2F665A7B2B121EFA001B1A2E /* Sources */,
+				2F665A7C2B121EFA001B1A2E /* Frameworks */,
+				2F665A7D2B121EFA001B1A2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F665A812B121EFA001B1A2E /* PBXTargetDependency */,
+			);
+			name = STUCATOUITests;
+			productName = STUCATOUITests;
+			productReference = 2F665A7F2B121EFA001B1A2E /* STUCATOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F665A572B121EF8001B1A2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2F665A5E2B121EF8001B1A2E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					2F665A742B121EFA001B1A2E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 2F665A5E2B121EF8001B1A2E;
+					};
+					2F665A7E2B121EFA001B1A2E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 2F665A5E2B121EF8001B1A2E;
+					};
+				};
+			};
+			buildConfigurationList = 2F665A5A2B121EF8001B1A2E /* Build configuration list for PBXProject "STUCATO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F665A562B121EF8001B1A2E;
+			productRefGroup = 2F665A602B121EF8001B1A2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F665A5E2B121EF8001B1A2E /* STUCATO */,
+				2F665A742B121EFA001B1A2E /* STUCATOTests */,
+				2F665A7E2B121EFA001B1A2E /* STUCATOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F665A5D2B121EF8001B1A2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F665A6F2B121EFA001B1A2E /* LaunchScreen.storyboard in Resources */,
+				2F665A6C2B121EFA001B1A2E /* Assets.xcassets in Resources */,
+				2F665A6A2B121EF8001B1A2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A732B121EFA001B1A2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A7D2B121EFA001B1A2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F665A5B2B121EF8001B1A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F665A672B121EF8001B1A2E /* ViewController.swift in Sources */,
+				2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */,
+				2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A712B121EFA001B1A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F665A7A2B121EFA001B1A2E /* STUCATOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F665A7B2B121EFA001B1A2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */,
+				2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F665A772B121EFA001B1A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F665A5E2B121EF8001B1A2E /* STUCATO */;
+			targetProxy = 2F665A762B121EFA001B1A2E /* PBXContainerItemProxy */;
+		};
+		2F665A812B121EFA001B1A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F665A5E2B121EF8001B1A2E /* STUCATO */;
+			targetProxy = 2F665A802B121EFA001B1A2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F665A682B121EF8001B1A2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F665A692B121EF8001B1A2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F665A6D2B121EFA001B1A2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F665A6E2B121EFA001B1A2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F665A872B121EFA001B1A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F665A882B121EFA001B1A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F665A8A2B121EFA001B1A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = STUCATO/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F665A8B2B121EFA001B1A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = STUCATO/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F665A8D2B121EFA001B1A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STUCATO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STUCATO";
+			};
+			name = Debug;
+		};
+		2F665A8E2B121EFA001B1A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STUCATO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STUCATO";
+			};
+			name = Release;
+		};
+		2F665A902B121EFA001B1A2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STUCATO;
+			};
+			name = Debug;
+		};
+		2F665A912B121EFA001B1A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = STUCATO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F665A5A2B121EF8001B1A2E /* Build configuration list for PBXProject "STUCATO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F665A872B121EFA001B1A2E /* Debug */,
+				2F665A882B121EFA001B1A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F665A892B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F665A8A2B121EFA001B1A2E /* Debug */,
+				2F665A8B2B121EFA001B1A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F665A8C2B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F665A8D2B121EFA001B1A2E /* Debug */,
+				2F665A8E2B121EFA001B1A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F665A8F2B121EFA001B1A2E /* Build configuration list for PBXNativeTarget "STUCATOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F665A902B121EFA001B1A2E /* Debug */,
+				2F665A912B121EFA001B1A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F665A572B121EF8001B1A2E /* Project object */;
+}
