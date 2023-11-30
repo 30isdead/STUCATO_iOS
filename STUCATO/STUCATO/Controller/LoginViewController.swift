@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         view.layer.cornerRadius = 30
         if let googleIcon = UIImage(named: "logoGoogle") {
             view.setImage(googleIcon, for: .normal)
+            //수정 필요!
             view.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 10)
            }
         //constraints를 cumtom으로 설정
