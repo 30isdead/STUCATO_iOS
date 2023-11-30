@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A622B121EF8001B1A2E /* AppDelegate.swift */; };
 		2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A642B121EF8001B1A2E /* SceneDelegate.swift */; };
-		2F665A672B121EF8001B1A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A662B121EF8001B1A2E /* ViewController.swift */; };
 		2F665A6A2B121EF8001B1A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A682B121EF8001B1A2E /* Main.storyboard */; };
 		2F665A6C2B121EFA001B1A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A6B2B121EFA001B1A2E /* Assets.xcassets */; };
 		2F665A6F2B121EFA001B1A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A6D2B121EFA001B1A2E /* LaunchScreen.storyboard */; };
 		2F665A7A2B121EFA001B1A2E /* STUCATOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A792B121EFA001B1A2E /* STUCATOTests.swift */; };
 		2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */; };
 		2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */; };
+		2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5F82B18235400039A5B /* SnapKit */; };
+		2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */; };
+		2FF2B60E2B1855B000039A5B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */; };
+		2FF2B6102B1855B000039A5B /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6072B1855B000039A5B /* Inter-Regular.ttf */; };
+		2FF2B6112B1855B000039A5B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */; };
+		2FF2B6122B1855B000039A5B /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6092B1855B000039A5B /* Inter-Light.ttf */; };
+		2FF2B6142B1855B000039A5B /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B60B2B1855B000039A5B /* Inter-Thin.ttf */; };
+		2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2B6162B18589100039A5B /* LoginViewController.swift */; };
+		2FF2B6212B185CBC00039A5B /* NotoSansKR-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6182B185CBB00039A5B /* NotoSansKR-Light.ttf */; };
+		2FF2B6222B185CBC00039A5B /* NotoSansKR-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6192B185CBB00039A5B /* NotoSansKR-Medium.ttf */; };
+		2FF2B6242B185CBC00039A5B /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */; };
+		2FF2B6252B185CBC00039A5B /* NotoSansKR-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */; };
+		2FF2B6292B185CBC00039A5B /* NotoSansKR-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +51,6 @@
 		2F665A5F2B121EF8001B1A2E /* STUCATO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STUCATO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F665A622B121EF8001B1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F665A642B121EF8001B1A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F665A662B121EF8001B1A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F665A692B121EF8001B1A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F665A6B2B121EFA001B1A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F665A6E2B121EFA001B1A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		2F665A7F2B121EFA001B1A2E /* STUCATOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STUCATOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITests.swift; sourceTree = "<group>"; };
 		2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		2FF2B6072B1855B000039A5B /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		2FF2B6092B1855B000039A5B /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		2FF2B60B2B1855B000039A5B /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		2FF2B6162B18589100039A5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2FF2B6182B185CBB00039A5B /* NotoSansKR-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.ttf"; sourceTree = "<group>"; };
+		2FF2B6192B185CBB00039A5B /* NotoSansKR-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.ttf"; sourceTree = "<group>"; };
+		2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
+		2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-SemiBold.ttf"; sourceTree = "<group>"; };
+		2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */,
+				2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +123,11 @@
 		2F665A612B121EF8001B1A2E /* STUCATO */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2B5FC2B184F4D00039A5B /* Model */,
+				2FF2B5FD2B184F5500039A5B /* View */,
+				2FF2B5FE2B184F5B00039A5B /* Controller */,
 				2F665A622B121EF8001B1A2E /* AppDelegate.swift */,
 				2F665A642B121EF8001B1A2E /* SceneDelegate.swift */,
-				2F665A662B121EF8001B1A2E /* ViewController.swift */,
 				2F665A682B121EF8001B1A2E /* Main.storyboard */,
 				2F665A6B2B121EFA001B1A2E /* Assets.xcassets */,
 				2F665A6D2B121EFA001B1A2E /* LaunchScreen.storyboard */,
@@ -127,6 +153,46 @@
 			path = STUCATOUITests;
 			sourceTree = "<group>";
 		};
+		2FF2B5FC2B184F4D00039A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FF2B6152B1855B800039A5B /* Font */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FF2B5FD2B184F5500039A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FF2B5FE2B184F5B00039A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FF2B6162B18589100039A5B /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FF2B6152B1855B800039A5B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2FF2B6182B185CBB00039A5B /* NotoSansKR-Light.ttf */,
+				2FF2B6192B185CBB00039A5B /* NotoSansKR-Medium.ttf */,
+				2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */,
+				2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */,
+				2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */,
+				2FF2B6092B1855B000039A5B /* Inter-Light.ttf */,
+				2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */,
+				2FF2B6072B1855B000039A5B /* Inter-Regular.ttf */,
+				2FF2B60B2B1855B000039A5B /* Inter-Thin.ttf */,
+				2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +209,10 @@
 			dependencies = (
 			);
 			name = STUCATO;
+			packageProductDependencies = (
+				2FF2B5F82B18235400039A5B /* SnapKit */,
+				2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */,
+			);
 			productName = STUCATO;
 			productReference = 2F665A5F2B121EF8001B1A2E /* STUCATO.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +265,7 @@
 				TargetAttributes = {
 					2F665A5E2B121EF8001B1A2E = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 					2F665A742B121EFA001B1A2E = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -215,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 2F665A562B121EF8001B1A2E;
+			packageReferences = (
+				2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2F665A602B121EF8001B1A2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +305,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF2B6122B1855B000039A5B /* Inter-Light.ttf in Resources */,
+				2FF2B60E2B1855B000039A5B /* Inter-SemiBold.ttf in Resources */,
+				2FF2B6242B185CBC00039A5B /* NotoSansKR-Regular.ttf in Resources */,
 				2F665A6F2B121EFA001B1A2E /* LaunchScreen.storyboard in Resources */,
+				2FF2B6212B185CBC00039A5B /* NotoSansKR-Light.ttf in Resources */,
 				2F665A6C2B121EFA001B1A2E /* Assets.xcassets in Resources */,
+				2FF2B6222B185CBC00039A5B /* NotoSansKR-Medium.ttf in Resources */,
+				2FF2B6292B185CBC00039A5B /* NotoSansKR-Thin.ttf in Resources */,
 				2F665A6A2B121EF8001B1A2E /* Main.storyboard in Resources */,
+				2FF2B6142B1855B000039A5B /* Inter-Thin.ttf in Resources */,
+				2FF2B6102B1855B000039A5B /* Inter-Regular.ttf in Resources */,
+				2FF2B6252B185CBC00039A5B /* NotoSansKR-SemiBold.ttf in Resources */,
+				2FF2B6112B1855B000039A5B /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F665A672B121EF8001B1A2E /* ViewController.swift in Sources */,
+				2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */,
 				2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */,
 				2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */,
 			);
@@ -440,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,6 +542,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "STUCATO/STUCATO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -484,6 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-0.STUCATO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "STUCATO/STUCATO-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,6 +690,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FF2B5F82B18235400039A5B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F665A572B121EF8001B1A2E /* Project object */;
 }
