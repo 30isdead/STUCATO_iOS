@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let view = UIButton()
         view.setTitle("구글 계정으로 로그인하기", for: .normal)
         view.setTitleColor(UIColor(red: 0.60, green: 0.60, blue: 0.60, alpha: 1.0), for: .normal)
-        view.titleLabel?.font = UIFont(name: "NotoSansKR-regular", size: 16)
+        view.titleLabel?.font = UIFont(name: "NotoSansKR-Regular", size: 16)
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
         view.layer.cornerRadius = 30
@@ -88,3 +88,5 @@ class ViewController: UIViewController {
     }
     
 }
+
+
