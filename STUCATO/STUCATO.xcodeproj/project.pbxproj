@@ -11,7 +11,6 @@
 		2F478B6A2B1C365B00630FDA /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F478B692B1C365B00630FDA /* ReserveViewController.swift */; };
 		2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F478B6B2B1C366900630FDA /* ReviewViewController.swift */; };
 		2F5A32672B1B58D900A1C357 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A32662B1B58D900A1C357 /* InfoViewController.swift */; };
-		2F5A326C2B1B9C0400A1C357 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5A326B2B1B9C0400A1C357 /* Tabman */; };
 		2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A622B121EF8001B1A2E /* AppDelegate.swift */; };
 		2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A642B121EF8001B1A2E /* SceneDelegate.swift */; };
 		2F665A6C2B121EFA001B1A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F665A6B2B121EFA001B1A2E /* Assets.xcassets */; };
@@ -19,8 +18,6 @@
 		2F665A7A2B121EFA001B1A2E /* STUCATOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A792B121EFA001B1A2E /* STUCATOTests.swift */; };
 		2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */; };
 		2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */; };
-		2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5F82B18235400039A5B /* SnapKit */; };
-		2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */; };
 		2FF2B60E2B1855B000039A5B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */; };
 		2FF2B6102B1855B000039A5B /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6072B1855B000039A5B /* Inter-Regular.ttf */; };
 		2FF2B6112B1855B000039A5B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */; };
@@ -33,6 +30,10 @@
 		2FF2B6252B185CBC00039A5B /* NotoSansKR-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */; };
 		2FF2B6292B185CBC00039A5B /* NotoSansKR-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */; };
 		2FF886862B1C8C80001488AF /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF886852B1C8C80001488AF /* NotoSansKR-Bold.ttf */; };
+		DC4A38852B1CD80100936B69 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A38842B1CD80100936B69 /* ListViewController.swift */; };
+		DC4A388A2B1D019D00936B69 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC4A38892B1D019D00936B69 /* SnapKit */; };
+		DC4A388D2B1D035700936B69 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = DC4A388C2B1D035700936B69 /* Tabman */; };
+		DC4A38902B1D14BC00936B69 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A388F2B1D14BC00936B69 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.ttf"; sourceTree = "<group>"; };
 		2FF886852B1C8C80001488AF /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
+		DC4A38842B1CD80100936B69 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DC4A388F2B1D14BC00936B69 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */,
-				2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */,
-				2F5A326C2B1B9C0400A1C357 /* Tabman in Frameworks */,
+				DC4A388A2B1D019D00936B69 /* SnapKit in Frameworks */,
+				DC4A388D2B1D035700936B69 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +138,7 @@
 				2FF2B5FC2B184F4D00039A5B /* Model */,
 				2FF2B5FD2B184F5500039A5B /* View */,
 				2FF2B5FE2B184F5B00039A5B /* Controller */,
+				DC4A388F2B1D14BC00936B69 /* CollectionViewCell.swift */,
 				2F665A622B121EF8001B1A2E /* AppDelegate.swift */,
 				2F665A642B121EF8001B1A2E /* SceneDelegate.swift */,
 				2F665A702B121EFA001B1A2E /* Info.plist */,
@@ -181,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF2B6162B18589100039A5B /* LoginViewController.swift */,
+				DC4A38842B1CD80100936B69 /* ListViewController.swift */,
 				2F5A32662B1B58D900A1C357 /* InfoViewController.swift */,
 				2F478B672B1C365300630FDA /* HomeViewController.swift */,
 				2F478B692B1C365B00630FDA /* ReserveViewController.swift */,
@@ -224,9 +228,8 @@
 			);
 			name = STUCATO;
 			packageProductDependencies = (
-				2FF2B5F82B18235400039A5B /* SnapKit */,
-				2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */,
-				2F5A326B2B1B9C0400A1C357 /* Tabman */,
+				DC4A38892B1D019D00936B69 /* SnapKit */,
+				DC4A388C2B1D035700936B69 /* Tabman */,
 			);
 			productName = STUCATO;
 			productReference = 2F665A5F2B121EF8001B1A2E /* STUCATO.app */;
@@ -302,8 +305,8 @@
 			);
 			mainGroup = 2F665A562B121EF8001B1A2E;
 			packageReferences = (
-				2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2F5A326A2B1B9C0400A1C357 /* XCRemoteSwiftPackageReference "Tabman" */,
+				DC4A38882B1D019D00936B69 /* XCRemoteSwiftPackageReference "Snapkit" */,
+				DC4A388B2B1D035700936B69 /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = 2F665A602B121EF8001B1A2E /* Products */;
 			projectDirPath = "";
@@ -360,10 +363,12 @@
 			files = (
 				2F478B682B1C365300630FDA /* HomeViewController.swift in Sources */,
 				2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */,
+				DC4A38902B1D14BC00936B69 /* CollectionViewCell.swift in Sources */,
 				2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */,
 				2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */,
 				2F5A32672B1B58D900A1C357 /* InfoViewController.swift in Sources */,
 				2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */,
+				DC4A38852B1CD80100936B69 /* ListViewController.swift in Sources */,
 				2F478B6A2B1C365B00630FDA /* ReserveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,39 +707,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F5A326A2B1B9C0400A1C357 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+		DC4A38882B1D019D00936B69 /* XCRemoteSwiftPackageReference "Snapkit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/uias/Tabman.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.2;
-			};
-		};
-		2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			repositoryURL = "https://github.com/Snapkit/Snapkit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.6.0;
 			};
 		};
+		DC4A388B2B1D035700936B69 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F5A326B2B1B9C0400A1C357 /* Tabman */ = {
+		DC4A38892B1D019D00936B69 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F5A326A2B1B9C0400A1C357 /* XCRemoteSwiftPackageReference "Tabman" */;
-			productName = Tabman;
-		};
-		2FF2B5F82B18235400039A5B /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = DC4A38882B1D019D00936B69 /* XCRemoteSwiftPackageReference "Snapkit" */;
 			productName = SnapKit;
 		};
-		2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */ = {
+		DC4A388C2B1D035700936B69 /* Tabman */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			package = DC4A388B2B1D035700936B69 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
