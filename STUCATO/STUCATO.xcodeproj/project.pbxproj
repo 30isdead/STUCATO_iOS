@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F478B682B1C365300630FDA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F478B672B1C365300630FDA /* HomeViewController.swift */; };
+		2F478B6A2B1C365B00630FDA /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F478B692B1C365B00630FDA /* ReserveViewController.swift */; };
+		2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F478B6B2B1C366900630FDA /* ReviewViewController.swift */; };
 		2F5A32672B1B58D900A1C357 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A32662B1B58D900A1C357 /* InfoViewController.swift */; };
 		2F5A326C2B1B9C0400A1C357 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5A326B2B1B9C0400A1C357 /* Tabman */; };
 		2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A622B121EF8001B1A2E /* AppDelegate.swift */; };
@@ -29,6 +32,7 @@
 		2FF2B6242B185CBC00039A5B /* NotoSansKR-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */; };
 		2FF2B6252B185CBC00039A5B /* NotoSansKR-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */; };
 		2FF2B6292B185CBC00039A5B /* NotoSansKR-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */; };
+		2FF886862B1C8C80001488AF /* NotoSansKR-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF886852B1C8C80001488AF /* NotoSansKR-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F478B672B1C365300630FDA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F478B692B1C365B00630FDA /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		2F478B6B2B1C366900630FDA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		2F5A32662B1B58D900A1C357 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		2F665A5F2B121EF8001B1A2E /* STUCATO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STUCATO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F665A622B121EF8001B1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +79,7 @@
 		2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.ttf"; sourceTree = "<group>"; };
 		2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.ttf"; sourceTree = "<group>"; };
+		2FF886852B1C8C80001488AF /* NotoSansKR-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,9 @@
 			children = (
 				2FF2B6162B18589100039A5B /* LoginViewController.swift */,
 				2F5A32662B1B58D900A1C357 /* InfoViewController.swift */,
+				2F478B672B1C365300630FDA /* HomeViewController.swift */,
+				2F478B692B1C365B00630FDA /* ReserveViewController.swift */,
+				2F478B6B2B1C366900630FDA /* ReviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +196,7 @@
 				2FF2B6192B185CBB00039A5B /* NotoSansKR-Medium.ttf */,
 				2FF2B61B2B185CBB00039A5B /* NotoSansKR-Regular.ttf */,
 				2FF2B61C2B185CBC00039A5B /* NotoSansKR-SemiBold.ttf */,
+				2FF886852B1C8C80001488AF /* NotoSansKR-Bold.ttf */,
 				2FF2B6202B185CBC00039A5B /* NotoSansKR-Thin.ttf */,
 				2FF2B6092B1855B000039A5B /* Inter-Light.ttf */,
 				2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */,
@@ -318,6 +330,7 @@
 				2FF2B6222B185CBC00039A5B /* NotoSansKR-Medium.ttf in Resources */,
 				2FF2B6292B185CBC00039A5B /* NotoSansKR-Thin.ttf in Resources */,
 				2FF2B6142B1855B000039A5B /* Inter-Thin.ttf in Resources */,
+				2FF886862B1C8C80001488AF /* NotoSansKR-Bold.ttf in Resources */,
 				2FF2B6102B1855B000039A5B /* Inter-Regular.ttf in Resources */,
 				2FF2B6252B185CBC00039A5B /* NotoSansKR-SemiBold.ttf in Resources */,
 				2FF2B6112B1855B000039A5B /* Inter-Medium.ttf in Resources */,
@@ -345,10 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F478B682B1C365300630FDA /* HomeViewController.swift in Sources */,
 				2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */,
+				2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */,
 				2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */,
 				2F5A32672B1B58D900A1C357 /* InfoViewController.swift in Sources */,
 				2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */,
+				2F478B6A2B1C365B00630FDA /* ReserveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
