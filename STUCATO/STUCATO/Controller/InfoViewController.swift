@@ -5,8 +5,7 @@
 //  Created by Seyoung on 12/2/23.
 //
 
-// 구현해야할거 : content 크기 따라 scroll 가능하게, reserve button disabled, bookmark button selected,
-// homeviewController의 autolayout 할때 InfoViewController의 tabbar 위치 받아옥
+// 구현해야할거 : content 크기 따라 scroll 가능하게, reserve button disabled, bookmark button selected
 
 import UIKit
 import SnapKit
