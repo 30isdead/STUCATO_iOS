@@ -164,7 +164,7 @@ extension HomeViewController {
         
         //locationView Autolayout
         locationView.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(80)
+            make.top.equalToSuperview().offset(96)
             make.leading.equalToSuperview().offset(36)
         }
         
