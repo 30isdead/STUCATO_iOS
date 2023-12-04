@@ -14,7 +14,6 @@ class ListViewController: UIViewController {
     lazy var searchController: UISearchController = {
         
         let searchController = UISearchController(searchResultsController: nil)
-        
         let attributedPlaceholder = NSAttributedString(
                 string: "스터디카페 이름/지역을 검색하세요",
                 attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14)]
@@ -61,8 +60,6 @@ class ListViewController: UIViewController {
             button.setTitleColor(.black, for: .normal)
             button.semanticContentAttribute = .forceLeftToRight
             button.contentHorizontalAlignment = .leading
-            //button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 10)
-            //button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: -10)
             return button
     }()
     

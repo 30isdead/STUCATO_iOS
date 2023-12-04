@@ -10,7 +10,7 @@ import SnapKit
 
 class CollectionViewCell: UICollectionViewCell {
     //MARK: - UI ProPerties
-
+    
     //스터디카페 사진
     lazy var cafeImage: UIImageView = {
         let view = UIImageView()
@@ -30,7 +30,7 @@ class CollectionViewCell: UICollectionViewCell {
         
         view.setImage(image, for: .normal)
         view.setImage(selectedImage, for: .selected)
-        view.tintColor = .black
+        view.tintColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
@@ -40,7 +40,7 @@ class CollectionViewCell: UICollectionViewCell {
     lazy var titleLable: UILabel = {
         let view = UILabel()
         view.text = "이제마스터디카페 홍대점"
-        view.font = UIFont.boldSystemFont(ofSize: 18)
+        view.font = UIFont(name: "NotoSansKR-Bold", size: 18)
         view.numberOfLines = 0
         view.textColor = .black
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +52,7 @@ class CollectionViewCell: UICollectionViewCell {
     lazy var timeInfoLable: UILabel = {
         let view = UILabel()
         view.text = "24시간영업"
-        view.font = UIFont.boldSystemFont(ofSize: 18)
+        view.font = UIFont(name: "NotoSansKR-Regular", size: 14)
         view.numberOfLines = 0
         view.textColor = .darkGray
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -80,9 +80,9 @@ class CollectionViewCell: UICollectionViewCell {
         
         return view
     }()
-
+    
     //MARK: - Define Method
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         viewSet()
@@ -120,15 +120,13 @@ class CollectionViewCell: UICollectionViewCell {
         cafeImage.layer.cornerRadius = 20
         
         bookMarkButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(30)
-            make.trailing.equalToSuperview().offset(70)
-            make.width.equalTo(20)
-            make.height.equalTo(20)
+            make.top.equalTo(cafeImage).offset(10)
+            make.trailing.equalTo(cafeImage).offset(-10)
         }
         
         titleLable.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(340)
-            make.leading.equalToSuperview().offset(10)
+            make.top.equalToSuperview().offset(335)
+            make.leading.equalTo(cafeImage)
         }
         
         timeInfoLable.snp.makeConstraints{make in
@@ -138,12 +136,12 @@ class CollectionViewCell: UICollectionViewCell {
         
         starImage.snp.makeConstraints { make in
             make.centerY.equalTo(titleLable)
-            make.leading.equalToSuperview().offset(250)
+            make.trailing.equalTo(cafeImage).offset(-40)
         }
         
         starLabel.snp.makeConstraints { make in
             make.centerY.equalTo(titleLable)
-            make.leading.equalToSuperview().offset(270)
+            make.trailing.equalTo(cafeImage).offset(-10)
         }
         
     }
