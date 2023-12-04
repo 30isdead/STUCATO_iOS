@@ -5,29 +5,23 @@
 //  Created by Seyoung on 12/2/23.
 //
 
+// 구현해야할거 : content 크기 따라 scroll 가능하게, reserve button disabled, bookmark button selected,
+// homeviewController의 autolayout 할때 InfoViewController의 tabbar 위치 받아옥
+
 import UIKit
 import SnapKit
-import Pageboy
-import Tabman
 
-class InfoViewController: TabmanViewController {
+class InfoViewController: UIViewController, UIScrollViewDelegate{
     
-    private var viewControllers: [UIViewController] = []
-    
-    public let bar = TMBar.ButtonBar()
-    
-    let tabView = UIView()
-    let firstVC = HomeViewController()
-    let secondVC = ReserveViewController()
-    let thirdVC = ReviewViewController()
-    
+    //MARK: - Properties
     let verticalScrollView = UIScrollView()
     let horizontalScrollView = UIScrollView()
-    
     let verticalContentView = UIView()
     let horizontalContentView = UIView()
     let images = ["image1", "image1", "image1"]
+    let containerView = UIView()
     
+    //bottom View
     lazy var bottomView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
@@ -37,7 +31,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
 
-    
+    //bottomView - 북마크 버튼
     lazy var bookMarkButton: UIButton = {
         let view = UIButton()
         let imageConfig = UIImage.SymbolConfiguration(pointSize: 22, weight: .medium)
@@ -52,6 +46,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
+    //bottomView - 북마크 숫자
     lazy var bookMarkLabel: UILabel = {
         let view = UILabel()
         view.text = "32"
@@ -64,6 +59,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
+    //bottomView - 예약하기 버튼
     lazy var reserveButton: UIButton = {
         let view = UIButton()
         view.setTitle("예약하기", for: .normal)
@@ -77,8 +73,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
-    
-   
+    //상단 백버튼
     lazy var backButton: UIButton = {
         let view = UIButton()
         let imageConfig = UIImage.SymbolConfiguration(pointSize: 20, weight: .medium)
@@ -91,6 +86,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
+    //스터디 카페 이름 정의
     lazy var titleLabel: UILabel = {
         let view = UILabel()
         view.text = "소월스터디카페앤룸 강변점"
@@ -103,6 +99,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
+    //별점 이미지
     lazy var starImage: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "star")
@@ -111,6 +108,7 @@ class InfoViewController: TabmanViewController {
         return view
     }()
     
+    //별점 숫자
     lazy var starLabel: UILabel = {
         let view = UILabel()
         view.text = "3.8"
@@ -123,13 +121,13 @@ class InfoViewController: TabmanViewController {
         return view
     }()
 
-    
-    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
+        goToChildView()
         configureUI()
         horizontalScrollWithImageView()
     }
@@ -142,7 +140,6 @@ extension InfoViewController {
         setLayout()
         setVerticalScrollView()
         setHorizontalScrollView()
-        setTabMan()
     }
     
     func setVerticalScrollView() {
@@ -155,57 +152,9 @@ extension InfoViewController {
         horizontalScrollView.showsHorizontalScrollIndicator = false
         horizontalScrollView.delegate = self
     }
-    
-    func setTabMan() {
-        viewControllers.append(firstVC)
-        viewControllers.append(secondVC)
-        viewControllers.append(thirdVC)
-        
-        self.dataSource = self
-        self.isScrollEnabled = false
-                
-        //탭바 레이아웃 설정
-        bar.layout.transitionStyle = .none
-        //        .fit : indicator가 버튼크기로 설정됨
-        bar.layout.interButtonSpacing = view.bounds.width / 8
-        bar.layout.contentMode = .fit
-        bar.layout.interButtonSpacing = 20 // 버튼 사이 간격 (화면 보면서 필요시 조절)
-
-                
-        //배경색
-        bar.backgroundView.style = .clear
-        bar.backgroundColor = .white
-                
-        //간격설정
-        bar.layout.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 10)
-                
-        //버튼 글씨 커스텀
-        bar.buttons.customize{
-            (button)
-            in
-            button.tintColor = .gray
-            button.selectedTintColor = .black
-            button.font = UIFont(name: "NotoSansKR-Regular", size: 14)!
-        }
-        //indicator
-        bar.indicator.weight = .custom(value: 1)
-        bar.indicator.overscrollBehavior = .bounce
-        bar.indicator.tintColor = .black
-        
-        addBar(bar, dataSource: self, at:.top)
-        
-        
-        tabView.addSubview(bar)
-        
-        bar.snp.makeConstraints{ make in
-            make.top.leading.equalToSuperview()
-            make.width.equalToSuperview()
-        }
-
-    }
-    
-
+   
     func setLayout() {
+        
         view.addSubview(verticalScrollView)
         view.addSubview(bottomView)
         
@@ -218,8 +167,8 @@ extension InfoViewController {
         verticalContentView.addSubview(titleLabel)
         verticalContentView.addSubview(starImage)
         verticalContentView.addSubview(starLabel)
-        verticalContentView.addSubview(tabView)
         verticalContentView.addSubview(backButton)
+        verticalContentView.addSubview(containerView)
         
         horizontalScrollView.addSubview(horizontalContentView)
         
@@ -250,36 +199,38 @@ extension InfoViewController {
             make.top.bottom.leading.trailing.equalToSuperview()
         }
         
-        horizontalScrollView.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview()
-            make.top.equalTo(-60)
-            make.height.equalToSuperview().multipliedBy(0.5)
-        }
-        
         let height = UIScreen.main.bounds.height
         
         verticalContentView.snp.makeConstraints { make in
             make.edges.equalTo(verticalScrollView.contentLayoutGuide)
             make.width.equalTo(verticalScrollView.frameLayoutGuide)
-            make.height.equalTo(height)
+            make.height.equalTo(height * 2)
+        }
+        
+        let guide = self.view.safeAreaLayoutGuide
+        
+        horizontalScrollView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.top.equalTo(-112)
+            make.height.equalTo(guide).multipliedBy(0.5)
         }
         
         let width = UIScreen.main.bounds.width
         
         horizontalContentView.snp.makeConstraints { make in
             make.edges.equalTo(horizontalScrollView.contentLayoutGuide)
-            make.height.equalTo(horizontalScrollView)
+            make.height.equalTo(horizontalScrollView.frameLayoutGuide)
             make.width.equalTo(width * CGFloat(images.count))
         }
         
         backButton.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(52)
+            make.top.equalToSuperview().offset(12)
             make.leading.equalToSuperview().offset(20)
         }
     
         
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(horizontalScrollView.snp.bottom).offset(8)
+            make.top.equalTo(horizontalContentView.snp.bottom).offset(28)
             make.leading.equalTo(28)
         }
         
@@ -293,16 +244,11 @@ extension InfoViewController {
             make.centerY.equalTo(titleLabel)
         }
         
-        tabView.snp.makeConstraints{ make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(16)
-            make.leading.equalToSuperview()
-            make.height.equalToSuperview()
-            make.width.equalTo(horizontalScrollView.snp.width)
-            
-            
+        containerView.snp.makeConstraints{ make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.leading.trailing.bottom.equalTo(view)
         }
         
-
     }
     
     func horizontalScrollWithImageView() {
@@ -320,32 +266,20 @@ extension InfoViewController {
     }
 }
 
-//MARK: - TabManSetting
-extension InfoViewController: PageboyViewControllerDataSource, TMBarDataSource {
+//MARK: - addChild
+extension InfoViewController {
     
-    func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        switch index {
-        case 0:
-            return TMBarItem(title: "홈")
-        case 1:
-            return TMBarItem(title: "예약")
-        case 2:
-            return TMBarItem(title: "리뷰")
-        default:
-            let title = "Page \(index)"
-           return TMBarItem(title: title)
-        }
-    }
-
-    func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return viewControllers.count
+    func goToChildView() {
+        // .init()은 코드로 직접 초기화하는 커스텀 함수
+        let childVC = TabViewController()
+        // frame 설정
+        childVC.view.frame = self.view.bounds
+        
+        self.addChild(childVC)
+        // 단순한 addSubView는 부모-자식 관계 성립 안함
+        self.containerView.addSubview(childVC.view)
+        // code 로 작업하면 didMove 직접 호출해 줘야, childVC 에 있을 didMove override 함수가 동작할 수 있음
+        childVC.didMove(toParent: self)
     }
     
-    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return viewControllers[index]
-    }
-    
-    func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return nil
-    }
 }

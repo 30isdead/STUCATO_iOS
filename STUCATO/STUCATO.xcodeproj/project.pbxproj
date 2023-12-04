@@ -19,6 +19,7 @@
 		2F665A7A2B121EFA001B1A2E /* STUCATOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A792B121EFA001B1A2E /* STUCATOTests.swift */; };
 		2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */; };
 		2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */; };
+		2FB17B482B1DABE5008CE632 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB17B472B1DABE5008CE632 /* TabViewController.swift */; };
 		2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5F82B18235400039A5B /* SnapKit */; };
 		2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */; };
 		2FF2B60E2B1855B000039A5B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */; };
@@ -68,6 +69,7 @@
 		2F665A7F2B121EFA001B1A2E /* STUCATOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STUCATOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITests.swift; sourceTree = "<group>"; };
 		2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FB17B472B1DABE5008CE632 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FF2B6072B1855B000039A5B /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		2FF2B6082B1855B000039A5B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				2FF2B6162B18589100039A5B /* LoginViewController.swift */,
 				2F5A32662B1B58D900A1C357 /* InfoViewController.swift */,
+				2FB17B472B1DABE5008CE632 /* TabViewController.swift */,
 				2F478B672B1C365300630FDA /* HomeViewController.swift */,
 				2F478B692B1C365B00630FDA /* ReserveViewController.swift */,
 				2F478B6B2B1C366900630FDA /* ReviewViewController.swift */,
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB17B482B1DABE5008CE632 /* TabViewController.swift in Sources */,
 				2F478B682B1C365300630FDA /* HomeViewController.swift in Sources */,
 				2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */,
 				2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */,

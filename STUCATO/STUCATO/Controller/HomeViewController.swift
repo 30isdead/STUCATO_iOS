@@ -10,6 +10,8 @@ import SnapKit
 
 class HomeViewController: UIViewController {
     
+    let verticalScrollView = UIScrollView()
+    let verticalContentView = UIView()
     let locationView = UIView()
     let callView = UIView()
     let timeView = UIView()
@@ -162,7 +164,7 @@ extension HomeViewController {
         
         //locationView Autolayout
         locationView.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(506)
+            make.top.equalToSuperview().offset(80)
             make.leading.equalToSuperview().offset(36)
         }
         
