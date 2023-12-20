@@ -9,6 +9,8 @@
 
 import UIKit
 import SnapKit
+import Alamofire
+import SwiftyJSON
 
 class InfoViewController: UIViewController, UIScrollViewDelegate{
     
@@ -19,6 +21,7 @@ class InfoViewController: UIViewController, UIScrollViewDelegate{
     let horizontalContentView = UIView()
     let images = ["image1", "image1", "image1"]
     let containerView = UIView()
+    let dataManager = StudyCafeDataManager()
     
     //bottom View
     lazy var bottomView: UIView = {
@@ -35,15 +38,14 @@ class InfoViewController: UIViewController, UIScrollViewDelegate{
         let view = UIButton()
         let imageConfig = UIImage.SymbolConfiguration(pointSize: 22, weight: .medium)
         let image = UIImage(systemName: "bookmark", withConfiguration: imageConfig)
-        let selectedImage = UIImage(systemName: "bookmark.fill", withConfiguration: imageConfig)
         
         view.setImage(image, for: .normal)
-        view.setImage(selectedImage, for: .selected)
         view.tintColor = .black
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
+    
     
     //bottomView - 북마크 숫자
     lazy var bookMarkLabel: UILabel = {
@@ -120,15 +122,36 @@ class InfoViewController: UIViewController, UIScrollViewDelegate{
         return view
     }()
 
+
     //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchData()
         
         view.backgroundColor = .white
+        
+        bookMarkButton.addTarget(self, action: #selector(bookMarkButtonTapped), for: .touchUpInside)
         
         goToChildView()
         configureUI()
         horizontalScrollWithImageView()
+    }
+    
+    //bookMarkButton Action
+    @objc func bookMarkButtonTapped() {
+        // 현재 선택 상태를 토글
+        bookMarkButton.isSelected = !bookMarkButton.isSelected
+        
+        // 선택 상태에 따라 이미지 변경
+        if bookMarkButton.isSelected {
+            let selectedImageConfig = UIImage.SymbolConfiguration(pointSize: 22, weight: .medium)
+            let selectedImage = UIImage(systemName: "bookmark.fill", withConfiguration: selectedImageConfig)
+            bookMarkButton.setImage(selectedImage, for: .selected)
+        } else {
+            let imageConfig = UIImage.SymbolConfiguration(pointSize: 22, weight: .medium)
+            let image = UIImage(systemName: "bookmark", withConfiguration: imageConfig)
+            bookMarkButton.setImage(image, for: .normal)
+        }
     }
 }
 
@@ -281,4 +304,17 @@ extension InfoViewController {
         childVC.didMove(toParent: self)
     }
     
+}
+
+//MARK: - Network
+// 스터디 카페 이름, 별점 설정
+extension InfoViewController {
+    func successAPI(_ result : StudyCafeDataModel) {
+        titleLabel.text = result.name
+        starLabel.text = result.rate
+    }
+    
+    func fetchData() {
+        dataManager.studyCafeDataManager(self)
+        }
 }

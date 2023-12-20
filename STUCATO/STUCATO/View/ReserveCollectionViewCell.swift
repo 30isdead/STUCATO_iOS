@@ -50,7 +50,7 @@ class ReserveCollectionViewCell: UICollectionViewCell {
     
     lazy var cafeImage: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "cafeImage")
+        view.image = UIImage(named: "cafeImageUnselected")
         view.sizeToFit()
         
         return view

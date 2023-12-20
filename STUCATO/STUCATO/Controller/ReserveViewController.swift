@@ -11,6 +11,7 @@ import SnapKit
 class ReserveViewController: UIViewController {
     
     let width = UIScreen.main.bounds.width
+    let dataManager = StudyCafeDataManager()
     
     lazy var reserveCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     

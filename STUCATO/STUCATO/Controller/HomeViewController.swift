@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     let timeView = UIView()
     let globeView = UIView()
     let wifiView = UIView()
+    let dataManager = StudyCafeDataManager()
     
     lazy var locationImage: UIImageView = {
         let view = UIImageView()
@@ -238,5 +239,15 @@ extension HomeViewController {
         }
 
 
+    }
+}
+
+extension HomeViewController {
+    func successAPI(_ result : StudyCafeDataModel) {
+        locationLabel.text = result.address
+        callLabel.text = result.phoneNo
+        timeLabel.text = result.openHour
+        globeLabel.text = result.siteInfo
+        wifiLabel.text = result.etcInfo
     }
 }

@@ -20,6 +20,12 @@
 		2F665A842B121EFA001B1A2E /* STUCATOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */; };
 		2F665A862B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */; };
 		2F80BB0E2B1E0D19008671F7 /* ReserveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F80BB0D2B1E0D19008671F7 /* ReserveCollectionViewCell.swift */; };
+		2FA30C722B32CB9D00682F9E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA30C712B32CB9D00682F9E /* Alamofire */; };
+		2FA30C7D2B332D1700682F9E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA30C7C2B332D1700682F9E /* SwiftyJSON */; };
+		2FA30C7F2B332F2B00682F9E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA30C7E2B332F2B00682F9E /* APIConstants.swift */; };
+		2FA30C812B33348100682F9E /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA30C802B33348100682F9E /* NetworkResult.swift */; };
+		2FA30C832B33369D00682F9E /* StudyCafeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA30C822B33369C00682F9E /* StudyCafeDataManager.swift */; };
+		2FA30C852B33370B00682F9E /* StudyCafeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA30C842B33370B00682F9E /* StudyCafeDataModel.swift */; };
 		2FB17B482B1DABE5008CE632 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB17B472B1DABE5008CE632 /* TabViewController.swift */; };
 		2FEF2F5D2B1E1E870058F003 /* ReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF2F5C2B1E1E870058F003 /* ReviewCollectionViewCell.swift */; };
 		2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF2B5F82B18235400039A5B /* SnapKit */; };
@@ -72,6 +78,10 @@
 		2F665A832B121EFA001B1A2E /* STUCATOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITests.swift; sourceTree = "<group>"; };
 		2F665A852B121EFA001B1A2E /* STUCATOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUCATOUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F80BB0D2B1E0D19008671F7 /* ReserveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FA30C7E2B332F2B00682F9E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		2FA30C802B33348100682F9E /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		2FA30C822B33369C00682F9E /* StudyCafeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCafeDataManager.swift; sourceTree = "<group>"; };
+		2FA30C842B33370B00682F9E /* StudyCafeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCafeDataModel.swift; sourceTree = "<group>"; };
 		2FB17B472B1DABE5008CE632 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2FEF2F5C2B1E1E870058F003 /* ReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FF2B6052B1855B000039A5B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -94,7 +104,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF2B5F92B18235400039A5B /* SnapKit in Frameworks */,
+				2FA30C722B32CB9D00682F9E /* Alamofire in Frameworks */,
 				2FF2B5FB2B18235400039A5B /* SnapKit-Dynamic in Frameworks */,
+				2FA30C7D2B332D1700682F9E /* SwiftyJSON in Frameworks */,
 				2F5A326C2B1B9C0400A1C357 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +183,10 @@
 			children = (
 				2FF2B6152B1855B800039A5B /* Font */,
 				2F665A6B2B121EFA001B1A2E /* Assets.xcassets */,
+				2FA30C7E2B332F2B00682F9E /* APIConstants.swift */,
+				2FA30C802B33348100682F9E /* NetworkResult.swift */,
+				2FA30C822B33369C00682F9E /* StudyCafeDataManager.swift */,
+				2FA30C842B33370B00682F9E /* StudyCafeDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +252,8 @@
 				2FF2B5F82B18235400039A5B /* SnapKit */,
 				2FF2B5FA2B18235400039A5B /* SnapKit-Dynamic */,
 				2F5A326B2B1B9C0400A1C357 /* Tabman */,
+				2FA30C712B32CB9D00682F9E /* Alamofire */,
+				2FA30C7C2B332D1700682F9E /* SwiftyJSON */,
 			);
 			productName = STUCATO;
 			productReference = 2F665A5F2B121EF8001B1A2E /* STUCATO.app */;
@@ -313,6 +331,8 @@
 			packageReferences = (
 				2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2F5A326A2B1B9C0400A1C357 /* XCRemoteSwiftPackageReference "Tabman" */,
+				2FA30C702B32CB9D00682F9E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2FA30C7B2B332D1600682F9E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 2F665A602B121EF8001B1A2E /* Products */;
 			projectDirPath = "";
@@ -367,13 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA30C852B33370B00682F9E /* StudyCafeDataModel.swift in Sources */,
 				2FB17B482B1DABE5008CE632 /* TabViewController.swift in Sources */,
 				2F478B682B1C365300630FDA /* HomeViewController.swift in Sources */,
 				2FF2B6172B18589100039A5B /* LoginViewController.swift in Sources */,
+				2FA30C812B33348100682F9E /* NetworkResult.swift in Sources */,
 				2F478B6C2B1C366900630FDA /* ReviewViewController.swift in Sources */,
 				2F665A632B121EF8001B1A2E /* AppDelegate.swift in Sources */,
 				2F80BB0E2B1E0D19008671F7 /* ReserveCollectionViewCell.swift in Sources */,
+				2FA30C7F2B332F2B00682F9E /* APIConstants.swift in Sources */,
 				2F5A32672B1B58D900A1C357 /* InfoViewController.swift in Sources */,
+				2FA30C832B33369D00682F9E /* StudyCafeDataManager.swift in Sources */,
 				2F665A652B121EF8001B1A2E /* SceneDelegate.swift in Sources */,
 				2FEF2F5D2B1E1E870058F003 /* ReviewCollectionViewCell.swift in Sources */,
 				2F478B6A2B1C365B00630FDA /* ReserveViewController.swift in Sources */,
@@ -722,6 +746,22 @@
 				minimumVersion = 3.0.2;
 			};
 		};
+		2FA30C702B32CB9D00682F9E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		2FA30C7B2B332D1600682F9E /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		2FF2B5F72B18231500039A5B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -737,6 +777,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F5A326A2B1B9C0400A1C357 /* XCRemoteSwiftPackageReference "Tabman" */;
 			productName = Tabman;
+		};
+		2FA30C712B32CB9D00682F9E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FA30C702B32CB9D00682F9E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2FA30C7C2B332D1700682F9E /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FA30C7B2B332D1600682F9E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 		2FF2B5F82B18235400039A5B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
